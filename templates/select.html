@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparaison des Réseaux et des Offres</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sélectionnez les Réseaux et les Offres à Comparer</h1>
+        <form id="compare-form">
+            <div class="form-group">
+                <label for="network1">Sélectionnez le Premier Réseau :</label>
+                <select class="form-control" id="network1">
+                    <option value="all-data.csv">Réseau 1 - Offres</option>
+                    <option value="train_sortie.csv">Réseau 1 - Internet</option>
+                    <option value="network2_offers.csv">Réseau 2 - Offres</option>
+                    <option value="network2_internet.csv">Réseau 2 - Internet</option>
+                    <option value="network3_offers.csv">Réseau 3 - Offres</option>
+                    <option value="network3_internet.csv">Réseau 3 - Internet</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="network2">Sélectionnez le Deuxième Réseau :</label>
+                <select class="form-control" id="network2">
+                    <option value="all-data.csv">Réseau 1 - Offres</option>
+                    <option value="train_sortie.csv">Réseau 1 - Internet</option>
+                    <option value="network2_offers.csv">Réseau 2 - Offres</option>
+                    <option value="network2_internet.csv">Réseau 2 - Internet</option>
+                    <option value="network3_offers.csv">Réseau 3 - Offres</option>
+                    <option value="network3_internet.csv">Réseau 3 - Internet</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Comparer</button>
+        </form>
+        <div id="result" style="margin-top: 20px;"></div>
+        <canvas id="chart" width="400" height="200" style="margin-top: 20px;"></canvas>
+        <a href="/" class="btn btn-secondary">Retour</a>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Comparateur de Réseaux Mobiles. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/static/main.js"></script>
+</body>
+</html>
